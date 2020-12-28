@@ -1,0 +1,1790 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=ks_c_5601-1987">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:굴림;
+	panose-1:2 11 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"맑은 고딕";
+	panose-1:2 11 5 3 2 0 0 2 0 4;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:굴림체;
+	panose-1:2 11 6 9 0 1 1 1 1 1;}
+@font-face
+	{font-family:"\@굴림";
+	panose-1:2 11 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:"\@굴림체";}
+@font-face
+	{font-family:"\@맑은 고딕";}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:107%;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	font-family:"맑은 고딕";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:굴림;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:40.0pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:107%;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	font-family:"맑은 고딕";}
+span.ng-scope
+	{mso-style-name:ng-scope;}
+.MsoChpDefault
+	{font-family:"맑은 고딕";}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:107%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:3.0cm 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:595.3pt 841.9pt;
+	margin:3.0cm 72.0pt 72.0pt 72.0pt;}
+div.WordSection2
+	{page:WordSection2;}
+@page WordSection3
+	{size:595.3pt 841.9pt;
+	margin:3.0cm 72.0pt 72.0pt 72.0pt;}
+div.WordSection3
+	{page:WordSection3;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=KO link=blue vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=left style='margin-top:18.0pt;margin-right:0cm;
+margin-bottom:9.0pt;margin-left:0cm;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><b><span lang=EN-US style='font-size:24.0pt;font-family:"Segoe UI",sans-serif;
+color:#1E1E3C;letter-spacing:1.2pt'>Getting Started with ZRG3M</span></b></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-top:18.0pt;margin-right:0cm;
+margin-bottom:9.0pt;margin-left:0cm;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><b><span lang=EN-US style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;
+color:#1E1E3C;letter-spacing:1.2pt'>Getting Started with AWS IoT</span></b></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif;
+color:black'>In this guide, we will show you how to build AWS IoT management
+system based on H/W root of trust for enhanced security: interact with Internet
+of Things, collect and process telemetry from devices or control devices
+remotely while protecting sensitive information in hardware format. Uplink and
+downlink messages are available on AWS IOT MQTT, allowing you to leverage
+Amazon services such as storing messages in DynamoDB, invoke Lambda functions
+and many more.&nbsp; </span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=EN-US style='font-size:18.0pt;font-family:
+"Segoe UI",sans-serif;color:#24292E'>About ZRG3M </span></b></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>The ZRG3M is a Wi-Fi/BLE module that consists of the MT7697
+Wi-Fi/ BLE combo chip and G3 security chip. This module includes 2.4 GHz chip
+antenna, Clock sources and all RF components.&nbsp; </span></p>
+
+</div>
+
+<span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection2>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=EN-US style='font-size:18.0pt;font-family:
+"Segoe UI",sans-serif;color:#24292E'><img width=225 height=139
+src="img/zrg3m-GettingStarted//image001.png"></span></b></p>
+
+<p class=MsoNormal style='text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-indent:40.0pt;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;line-height:107%;
+font-family:"Segoe UI",sans-serif'><a
+href="https://ictk-solution-dev.github.io/zrg3m/">About ZRG3M</a><span
+class=MsoHyperlink>&nbsp; </span></span></p>
+
+<p class=MsoNormal style='text-indent:40.0pt;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;line-height:107%;
+font-family:"Segoe UI",sans-serif'><a
+href="https://ictk-solution-dev.github.io/zrg3m/files/ZRG3M-Datasheet-v0.1c.pdf">ZRG3M
+DATASHEET</a></span></p>
+
+<p class=MsoNormal style='text-indent:40.0pt;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;line-height:107%;
+font-family:"Segoe UI",sans-serif'><a
+href="https://ictk-solution-dev.github.io/zrg3m/TrustLe-security.html">TrustLe-security</a></span></p>
+
+<p class=MsoNormal style='text-indent:40.0pt;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;line-height:107%;
+font-family:"Segoe UI",sans-serif'><a
+href="https://ictk-solution-dev.github.io/zrg3m/zrg3m-Secured%20Iot%20Platform.html">Secured
+IoT Platform</a></span></p>
+
+<p class=MsoNormal style='text-indent:40.0pt;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;line-height:107%;
+font-family:"Segoe UI",sans-serif'><a href="https://www.ictk-puf.com/">ICTK
+Holdings</a><span style='color:#212529'>&nbsp; </span></span></p>
+
+</div>
+
+<span lang=EN-US style='font-size:12.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;
+color:#212529'><br clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection3>
+
+<p class=MsoNormal style='text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;line-height:107%;
+font-family:"Segoe UI",sans-serif;color:#212529'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=EN-US style='font-size:18.0pt;line-height:
+107%;font-family:"Segoe UI",sans-serif;color:#24292E'>Set up the ZRG3M
+Evaluation board</span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=EN-US style='font-size:18.0pt;line-height:
+107%;font-family:"Segoe UI",sans-serif;color:#24292E'><img border=0 width=295
+height=195 id="그림 14"
+src="img/zrg3m-GettingStarted//image002.png"></span></b></p>
+
+<p class=MsoNormal align=left style='margin-top:18.0pt;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:0cm;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><b><span lang=EN-US style='font-size:15.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Prerequisite Hardware</span></b></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif;
+color:black'>The Following items are required before you can make connections:</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:38.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif;
+color:black'>Standard ZRG3M Kit ( To obtain this kit, please contact us from </span><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:black'><a
+href="https://www.ictk-puf.com/contact/"><span style='font-size:10.5pt'>ICTK
+support site</span></a></span><span lang=EN-US style='font-size:10.5pt;
+font-family:"Segoe UI",sans-serif;color:black'> )&nbsp; </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:56.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif;
+color:black'>ZRG3M Evaluation board </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:56.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif;
+color:black'>Two USB to UART board </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:56.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif;
+color:black'>5-pin wire Harness </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:56.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif;
+color:black'>3-pin wire Harness</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:38.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif;
+color:black'>Two USB cable </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:38.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif;
+color:black'>A computer running Windows 7or 10 operating system</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:38.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif;
+color:black'>Wi-Fi network</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-top:18.0pt;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:0cm;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><b><span lang=EN-US style='font-size:15.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Hardware setup</span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Connect your host computer to ZRG3M</span></p>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='color:#24292E;text-align:left;line-height:normal;
+     background:white;text-autospace:ideograph-numeric ideograph-other;
+     word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:
+     "Segoe UI",sans-serif'>Connect the J1 UART connector using USB to UART
+     board with 5-pin wire harness . &nbsp;</span></li>
+ <li class=MsoNormal style='color:#24292E;text-align:left;line-height:normal;
+     background:white;text-autospace:ideograph-numeric ideograph-other;
+     word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:
+     "Segoe UI",sans-serif'>Connect J6 using USB to UART with 3-pin wire
+     harness to send and receive AT command messages during operation.&nbsp; </span></li>
+</ol>
+
+<p class=MsoNormal align=left style='margin-top:3.0pt;margin-left:36.0pt;
+text-align:left;line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'><img border=0 width=602 height=305 id="그림 3"
+src="img/zrg3m-GettingStarted//image003.png"></span></p>
+
+<p class=MsoNormal align=left style='text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;</span></p>
+
+<div style='border:none;border-bottom:solid #EAECEF 1.0pt;padding:0cm 0cm 4.0pt 0cm;
+background:white'>
+
+<p class=MsoNormal align=left style='margin-top:18.0pt;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:0cm;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all;border:none;padding:0cm'><b><span lang=EN-US style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#24292E'>Set Up Your Development
+Environment</span></b></p>
+
+</div>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>To communicate with your board, you need to download and install
+a firmware and configure board with python scripts.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:18.0pt;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:0cm;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><b><span lang=EN-US style='font-size:15.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Download and install Flash tool (MTK lab) and firmware </span></b></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>To set up your environment, please download </span><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:black'><a
+href="https://docs.labs.mediatek.com/resource/mt7687-mt7697/en/downloads"><span
+style='font-size:12.0pt'>MT76X7 Flashtool</span></a></span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;color:#24292E'>.
+Install them on your host computer.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:32.0pt;text-align:left;text-indent:40.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif;color:#24292E'>&#8226;&nbsp;
+<a name="_Hlk50112544"></a><a
+href="https://labs.mediatek.com/en/download/i7wl3Hcf">IoT FlashTool for Windows</a>
+</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:32.0pt;text-align:left;text-indent:40.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif;color:#24292E'>*MaxOS
+and Linux is not supported&nbsp; </span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;text-indent:32.0pt;line-height:12.0pt;background:white;
+text-autospace:ideograph-other;word-break:keep-all'><span lang=EN-US
+style='font-family:"Segoe UI",sans-serif;color:#24292E'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Download the </span><span lang=EN-US style='font-family:"Segoe UI",sans-serif;
+color:black'><a
+href="https://ictk-solution-dev.github.io/zrg3m/Firmware-release.html"><span
+style='font-size:12.0pt'>latest firmware along with build application</span></a></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'> for your convenience. Re-locate or copy these four files in the
+IoT Flashtool folder you downloaded above.&nbsp; </span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:32.0pt;text-align:left;text-indent:40.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif;color:#24292E'>build.bat</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:32.0pt;text-align:left;text-indent:40.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif;color:#24292E'>Flash.bat</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Modify Flash.bat with the correct path.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:18.0pt;text-align:left;text-indent:22.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&#8226;&nbsp; Flash.bat </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:70.9pt;text-align:left;text-indent:-18.0pt;
+background:white;word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;
+line-height:107%;font-family:"Segoe UI",sans-serif;color:#24292E'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;
+color:#24292E'>set comport</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:48.9pt;text-align:left;text-indent:31.1pt;
+background:white;word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;
+line-height:107%;font-family:"Segoe UI",sans-serif;color:#24292E'>COMXX</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:70.9pt;text-align:left;text-indent:-18.0pt;
+background:white;word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;
+line-height:107%;font-family:"Segoe UI",sans-serif;color:#24292E'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;line-height:107%;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Set the correct path for LE-201124C.bin </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:70.9pt;text-align:left;text-indent:9.1pt;
+background:white;word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;
+line-height:107%;font-family:"Segoe UI",sans-serif;color:#24292E'>C:\XXXXXX\LE-201124C.bin</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>To set the board at download mode, please do the following.</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:72.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif'>a.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>Locate the DL(download) and RST(reset) buttons on the board as
+shown below. </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:72.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif'>b.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>Press ad hold the onboard DL and RST button together. </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:72.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif'>c.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>Release the RST button while holding DL button. </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:72.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif'>d.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>Release the DL button.&nbsp; </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'><img border=0 width=324 height=236 id="그림 20"
+src="img/zrg3m-GettingStarted//image004.png"></span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Run Flash.bat </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Command prompt window shown below will appear when running
+Flash.bat. Do not stop it while in progress. After post-download action is
+completed, the window will disappear automatically. </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'><img border=0 width=601 height=315
+src="img/zrg3m-GettingStarted//image005.jpg"></span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:12.0pt;text-align:center;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-top:18.0pt;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:0cm;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><b><span
+lang=EN-US style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Connect to AWS IoT Core with MQTT and TLS </span></b></p>
+
+<p class=MsoNormalCxSpMiddle align=left style='text-align:left;line-height:
+normal;background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:black'>*
+Implementation is based on MQTT version 3.1.1 and TLS 1.2 with
+ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 ciphersuite.</span><span lang=EN-US
+style='font-family:"Segoe UI",sans-serif;color:#538135'><br>
+</span><span lang=EN-US style='font-family:"Segoe UI",sans-serif;color:black'>*
+private key and certificates are encrypted in HW-based security chip, supports
+enhanced secured working structure. </span></p>
+
+<p class=MsoNormalCxSpMiddle align=left style='text-align:left;line-height:
+normal;background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:black'>* ZRG3M
+provides TRNG (True Random Number Generator) for best security. When the MCU
+performs TRNG Read through I/O ports, it reads 32-bit value.</span></p>
+
+<p class=MsoNormalCxSpMiddle align=left style='text-align:left;line-height:
+normal;background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:red'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-top:18.0pt;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:0cm;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><b><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Prerequisites </span></b></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:72.0pt;text-align:left;text-indent:7.9pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&#8226;&nbsp; CA certificate </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:72.0pt;text-align:left;text-indent:7.9pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&#8226;&nbsp; A client certificate </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:72.0pt;text-align:left;text-indent:7.9pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&#8226;&nbsp; A client private key </span></p>
+
+<p style='background:white'><span lang=EN-US style='font-family:"Segoe UI",sans-serif;
+color:#24292E'>ZRG3M support ECC but not RSA. Please prepare your own ECC
+certificate and key to connect AWS IoT. Please use this guide to create your
+own ECC certificates : </span><span lang=EN-US style='font-family:"Segoe UI",sans-serif;
+color:black'><a
+href="https://ictk-solution-dev.github.io/zrg3m/openssl_guide.html">Create ECC
+certificate guide</a></span></p>
+
+<p class=MsoNormal align=left style='margin-top:18.0pt;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:0cm;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><b><span
+lang=EN-US style='font-size:15.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Connect to AWS IoT Core </span></b></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Log in to the&nbsp;</span><span lang=EN-US style='font-family:
+"Segoe UI",sans-serif;color:black'><a href="https://aws.amazon.com/console/"><b><span
+style='font-size:12.0pt;color:#24292E'>AWS Management Console</span></b></a></span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Choose <b><img border=0 width=13 height=13
+src="img/zrg3m-GettingStarted//image006.png">&nbsp;IoT Core
+service</b>&nbsp; </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>In the left navigation pane, click on&nbsp;<b>Manage/Things</b> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'><img border=0 width=801 height=491
+src="img/zrg3m-GettingStarted//image007.png"></span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Click on Create button and give your device a name and press Create</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'><img border=0 width=826 height=491
+src="img/zrg3m-GettingStarted//image008.png"></span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>On the Certificate page, choose <b>Use my certificate</b>.</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'><img border=0 width=843 height=491
+src="img/zrg3m-GettingStarted//image009.png"></span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><b><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Register a CA certificate </span></b><span lang=EN-US
+style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;color:#24292E'>for
+your own certificate to register </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Refer to </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif;color:black'><a
+href="https://docs.aws.amazon.com/iot/latest/developerguide/register-CA-cert.html">https://docs.aws.amazon.com/iot/latest/developerguide/register-CA-cert.html</a></span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'><img border=0 width=847 height=492
+src="img/zrg3m-GettingStarted//image010.png"></span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Upload your own certificate </span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>To Register your certificate, refer to </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif;color:black'><a
+href="https://docs.aws.amazon.com/iot/latest/developerguide/manual-cert-registration.html">https://docs.aws.amazon.com/iot/latest/developerguide/manual-cert-registration.html</a></span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'><img border=0 width=802 height=491
+src="img/zrg3m-GettingStarted//image011.png"></span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>In the left navigation pane, choose <b>Policies</b> under Secure
+menu</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Click on the Create button and define a policy.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:72.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><u><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:red'>NOTE</span></u><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:#24292E'>: The
+specific permission policies can vary for your use cases. For non-dev
+environments, all devices in your fleet must have credentials with privileges
+that authorize intended actions only, which include (but not limited to) AWS
+IoT MQTT actions such as publishing messages or subscribing to topics with
+specific scope and context. Identify the permission policies that best meet
+your business and security requirements. </span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:72.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:#24292E'>For sample
+policies, refer to </span><span lang=EN-US style='font-family:"Segoe UI",sans-serif;
+color:black'><a
+href="https://docs.aws.amazon.com/iot/latest/developerguide/example-iot-policies.html"><span
+style='color:#24292E;text-decoration:none'>https://docs.aws.amazon.com/iot/latest/developerguide/example-iot-policies.html</span></a></span><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:#24292E'>. Also refer
+to </span><span lang=EN-US style='font-family:"Segoe UI",sans-serif;color:black'><a
+href="https://docs.aws.amazon.com/iot/latest/developerguide/security-best-practices.html"><span
+style='color:#24292E;text-decoration:none'>https://docs.aws.amazon.com/iot/latest/developerguide/security-best-practices.html</span></a></span><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:#24292E'>.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:72.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:#24292E'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:18.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'><img border=0 width=839 height=491 id="그림 2"
+src="img/zrg3m-GettingStarted//image012.png"></span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:18.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&lt; policy statements&gt; </span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>{</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp; &quot;Version&quot;: &quot;2012-10-17&quot;,</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp; &quot;Statement&quot;: [</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp; {</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Effect&quot;:
+&quot;Allow&quot;,</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Action&quot;:
+&quot;iot:Connect&quot;,</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Resource&quot;:
+&quot;arn:aws:iot:XXXXX:client/${iot:Connection.Thing.ThingName}&quot;</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp; },</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp; {</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Effect&quot;:
+&quot;Allow&quot;,</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Action&quot;:
+&quot;iot:Subscribe&quot;,</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Resource&quot;: [</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;arn:aws:iot:
+XXXXX:topicfilter/$aws/things/${iot:Connection.Thing.ThingName}/shadow/*&quot;,</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;arn:aws:iot:
+XXXXX:topicfilter/${iot:Connection.Thing.ThingName}/*&quot;</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp; },</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp; {</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Effect&quot;:
+&quot;Allow&quot;,</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Action&quot;:
+&quot;iot:Receive&quot;,</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&quot;Resource&quot;: [</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;arn:aws:iot:
+XXXXX:topic/$aws/things/${iot:Connection.Thing.ThingName}/shadow/*&quot;,</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;arn:aws:iot:
+XXXXX:topic/${iot:Connection.Thing.ThingName}/*&quot;</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp; },</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp; {</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Effect&quot;:
+&quot;Allow&quot;,</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;Action&quot;:
+&quot;iot:Publish&quot;,</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&quot;Resource&quot;: [</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;arn:aws:iot:
+XXXXX:topic/$aws/things/${iot:Connection.Thing.ThingName}/shadow/*&quot;,</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;arn:aws:iot:
+XXXXX:topic/${iot:Connection.Thing.ThingName}/*&quot;</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ]</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;&nbsp;&nbsp; }</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp; ]</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>}</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Choose Create. You will see a message indicating that the policy
+has been created successfully.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:17.85pt;margin-bottom:.0001pt;text-align:left;
+line-height:12.0pt;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:8.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>10.<span style='font:7.0pt "Times New Roman"'> </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;Go to the certificates page, click on the three dots of
+your certificate and attach the policy you just created to the certificate.
+Please make sure the status of the certificate is &apos; Active &apos;. </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><b><span
+lang=EN-US style='font-size:13.5pt;font-family:"Segoe UI",sans-serif;
+color:#1E1E3C;letter-spacing:1.2pt'><img border=0 width=759 height=492
+id="그림 17" src="img/zrg3m-GettingStarted//image013.png"></span></b></p>
+
+<p class=MsoNormal align=left style='margin-top:18.0pt;margin-right:0cm;
+margin-bottom:9.0pt;margin-left:0cm;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><b><span lang=EN-US style='font-size:13.5pt;font-family:"Segoe UI",sans-serif;
+color:#1E1E3C;letter-spacing:1.2pt'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=left style='margin-top:18.0pt;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:0cm;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><b><span
+lang=EN-US style='font-size:15.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Setting up the ZRG3M device </span></b></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>This Python scripts allow users to set Wi-Fi information and
+application specific settings in order to connect the board with the AWS IoT. </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US
+style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;color:windowtext;
+text-decoration:none'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>Do</span><span lang=EN-US style='font-size:12.0pt;font-family:
+"Segoe UI",sans-serif;color:#24292E'>wnload all python scripts from </span><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:black'><a
+href="https://github.com/ictk-solution-dev/zrg3m-py"><span style='font-size:
+12.0pt'>the ICTK GitHub repository</span></a><a name="_Hlk48218916"></a></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'> to a zrg3m-py</span><span lang=EN-US style='font-size:12.0pt;
+font-family:"Segoe UI",sans-serif;color:#24292E'> folder. </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Use this guide to provision the certificate to ZRG3M: </span><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:black'><a
+href="https://ictk-solution-dev.github.io/zrg3m/zrg3m-Certificate.html"><span
+style='font-size:12.0pt'>getting started-provisioning certificate guide</span></a></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'> </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Modify wifi.json and aws.json files in zrg3m-py folder according
+to your settings.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:38.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Please have your aws_host_url, thing name and client ID ready to
+configure your device. Use port number as 8883 for secure-MQTT protocol. </span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:38.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>User can find </span><span lang=EN-US style='font-size:12.0pt;
+font-family:"Segoe UI",sans-serif;color:black'>aws_host_url</span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'> from the </span><span lang=EN-US style='font-family:"Segoe UI",sans-serif;
+color:black'><a href="https://aws.amazon.com/console/"><span style='font-size:
+12.0pt;color:#24292E;text-decoration:none'>AWS IoT Console</span></a></span><b><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>.</span></b><span lang=EN-US style='font-size:12.0pt;font-family:
+"Segoe UI",sans-serif;color:#24292E'> Click the Settings at the left pane.
+Please make a copy of the Custom endpoint and use it as </span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>aws_host_url.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:38.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'><img border=0 width=859 height=491 id="그림 12"
+src="img/zrg3m-GettingStarted//image014.png"></span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:56.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:38.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif;
+color:black'>wifi.json </span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:38.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:black'><img border=0
+width=344 height=173 id="그림 11"
+src="img/zrg3m-GettingStarted//image015.png"></span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:38.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif;
+color:black'>aws.json</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:38.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'><img border=0 width=350 height=108
+src="img/zrg3m-GettingStarted//image016.png"></span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Run zrg3m_configuration.py to configure settings of your
+device.&nbsp; </span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:38.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Available serial port will be shown in python shell window. Once
+user selects the serial port for the ZRG3M, it will be stored in json file name
+&apos;zrg3m.json&apos;.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:38.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>configuration process </span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:38.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif;
+color:black'><img border=0 width=755 height=342 id="그림 9"
+src="img/zrg3m-GettingStarted//image017.png"></span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:38.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Wi-Fi and AWS setting that was written on json files will be
+configured. You will see six &apos;OK&apos; messages when configuration is successful. If
+&apos;fail&apos; message appears during the configuration, run zrg3m_configuration.py
+again. </span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:38.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Please reset the board after the configuration.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-top:18.0pt;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:0cm;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><b><span
+lang=EN-US style='font-size:15.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>MQTT Test: Publish/Subscribe </span></b></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>To verify connectivity to AWS IoT, ZRG3M can publish and
+subscribe messages to user specific topics using python scripts: zrg3m_publish.py
+, zrg3m_subscribe.py. </span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+text-indent:5.9pt;line-height:normal;background:white;text-autospace:ideograph-other;
+word-break:keep-all'><b><span lang=EN-US style='font-size:12.0pt;font-family:
+"Segoe UI",sans-serif;color:#24292E'>Publish Messages </span></b></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>Modify pub.json with your topic, QoS and payload</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>pub.json </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:black'><img border=0
+width=479 height=114 id="그림 1"
+src="img/zrg3m-GettingStarted//image018.jpg"></span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'><img border=0 width=841 height=491 id="그림 15"
+src="img/zrg3m-GettingStarted//image019.png"></span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>For topics, refer to </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:black'><a
+href="https://docs.aws.amazon.com/iot/latest/developerguide/topics.html"><span
+style='font-size:12.0pt'>https://docs.aws.amazon.com/iot/latest/developerguide/topics.html</span></a></span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>QoS (Quality of Service):</span><span lang=EN-US style='font-size:
+12.0pt;font-family:"Segoe UI",sans-serif;color:#333333;background:white'> </span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>The quality of service defaults to QoS 0. You can use either QoS 0
+or QoS 1. For more information about QoS support in AWS IoT, see&nbsp;</span><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:black'><a
+href="https://docs.aws.amazon.com/console/iot/protocols/mqtt" target="_blank"><span
+style='font-size:12.0pt;color:black;text-decoration:none'>the </span><span
+style='font-size:12.0pt;text-decoration:none'>documentation</span></a></span><span
+class=ng-scope><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#333333;background:white'>.</span></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span class=MsoHyperlink><span lang=EN-US style='font-size:12.0pt;
+font-family:"Segoe UI",sans-serif;color:windowtext;text-decoration:none'>&nbsp;</span></span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>Run zrg3m_publish.py for publish from the device and zrg3m_susbscribe.py
+for subscribing. </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'><img border=0 width=638 height=340 id="그림 4"
+src="img/zrg3m-GettingStarted//image020.jpg"></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>Using AWS IoT device shadow, users can also update and get shadow
+information with amazon reserved shadow topics. Please modify your pub.json so
+ZRG3M can publish messages to thing shadow. To create a complete topic, replace
+thingname with the name of your device. &nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>For shadow usage, refer to </span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;color:black'>&nbsp;</span><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:black'><a
+href="https://docs.aws.amazon.com/iot/latest/developerguide/iot-device-shadows.html"><span
+style='font-size:12.0pt'>https://docs.aws.amazon.com/iot/latest/developerguide/iot-device-shadows.html</span></a></span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'><img border=0 width=489 height=111
+src="img/zrg3m-GettingStarted//image021.jpg"></span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>Run zrg3m_publish.py to publish. Updated shadow states as in
+pub.json will be shown in thing&apos;s Shadow State. </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><u><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:blue'><img border=0
+width=834 height=491 src="img/zrg3m-GettingStarted//image022.png"></span></u></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;text-indent:5.25pt;line-height:normal;background:white;
+text-autospace:ideograph-numeric ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+text-indent:5.9pt;line-height:normal;background:white;text-autospace:ideograph-other;
+word-break:keep-all'><b><span lang=EN-US style='font-size:12.0pt;font-family:
+"Segoe UI",sans-serif;color:#24292E'>Subscribe Messages </span></b></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>Modify sub.json with your topic, QoS and payload. To create a
+complete topic, replace thingname with the name of your device.</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>sub.json </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:black'><img border=0
+width=476 height=83 id="그림 43"
+src="img/zrg3m-GettingStarted//image023.jpg"></span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>Run zrg3m_subscribe.py for subscribing. </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>To publish MQTT messages from the MQTT client, </span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>sign in to the </span><span lang=EN-US style='font-family:"Segoe UI",sans-serif;
+color:black'><a href="https://console.aws.amazon.com/iotv2/"><span
+style='font-size:12.0pt'>AWS IoT console</span></a></span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;color:#24292E'>. </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>I</span><span lang=EN-US style='font-size:11.0pt;font-family:
+"Segoe UI",sans-serif;color:black'>n the left navigation pane, choose <b>Test </b>and
+then choose <b>MQTT test clients</b> to open the MQTT client. </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>On the MQTT client page, in the Publish section, in the Specify a
+topic and a message to publish field, enter the topic name of your message. In
+this example, use ZRG3M/test.</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>In the message payload window, enter the following json:</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:38.0pt;margin-bottom:.0001pt;text-align:left;
+line-height:normal;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+color:#16191F'>{</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:38.0pt;margin-bottom:.0001pt;text-align:left;
+line-height:normal;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+color:#16191F;background:#F9F9F9'>&nbsp;&nbsp;&nbsp; </span><span lang=EN-US
+style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;color:#986801'>&quot;desired&quot;</span><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+color:#16191F;background:#F9F9F9'>: {</span><span lang=EN-US style='font-size:
+11.0pt;font-family:"Segoe UI",sans-serif;color:#0B6125'>&quot;temp&quot;</span><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+color:#16191F;background:#F9F9F9'>&colon;20}</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:38.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-size:11.0pt;font-family:"Segoe UI",sans-serif;
+color:#16191F;background:#F9F9F9'>}</span><span lang=EN-US style='font-size:
+12.0pt;font-family:"Segoe UI",sans-serif;color:black'> </span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:38.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'><img border=0 width=797 height=491 id="그림 13"
+src="img/zrg3m-GettingStarted//image024.png"></span></p>
+
+<p class=MsoListParagraph style='margin-left:36.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif'>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-size:12.0pt;line-height:107%;
+font-family:"Segoe UI",sans-serif'>By publishing MQTT message using amazon
+console, topic and payload will be shown in python shell as below.&nbsp; </span></p>
+
+<p class=MsoListParagraph style='margin-left:36.0pt'><span lang=EN-US
+style='font-family:"Segoe UI",sans-serif'><img border=0 width=674 height=285
+id="그림 6" src="img/zrg3m-GettingStarted//image025.png"></span></p>
+
+<p class=MsoNormal align=left style='margin-left:20.0pt;text-align:left'><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-top:18.0pt;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:0cm;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><b><span
+lang=EN-US style='font-size:15.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Device Shadow: Update/Delta </span></b></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>ZRG3M publishes updates and display delta using python scripts:
+zrg3m_update.py , zrg3m_delta.py. </span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><b><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Update shadows </span></b></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>ZRG3M publishes updates to the AWS IoT Device Shadow using python
+code provided. </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>Modify update.json with your input. </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:black'><img border=0
+width=432 height=120 id=shape1034
+src="img/zrg3m-GettingStarted//image026.jpg"></span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:18.0pt;text-align:left;text-indent:18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>The parameter information for shadow update is as below.</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:18.0pt;text-align:left;text-indent:18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif;color:black'><img
+border=0 width=494 height=192 id="그림 16"
+src="img/zrg3m-GettingStarted//image027.jpg"></span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:18.0pt;text-align:left;text-indent:18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>For shadow document examples, refer to:</span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:35.45pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-other;word-break:keep-all'><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:black'><a
+href="https://docs.aws.amazon.com/iot/latest/developerguide/device-shadow-document.html#device-shadow-document-syntax"><span
+style='font-size:12.0pt'>https://docs.aws.amazon.com/iot/latest/developerguide/device-shadow-document.html#device-shadow-document-syntax</span></a></span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:black'>Run zrg3m_update.py. Python shell will display successful
+execution of shadow updates. You can also observe updated shadow values on your
+AWS console, thing&apos;s shadow state. </span></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:20.0pt;margin-bottom:.0001pt;text-align:left;
+text-indent:10.0pt;line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><i><span lang=EN-US style='font-size:10.5pt;font-family:
+"Segoe UI",sans-serif;color:black'><img border=0 width=555 height=77
+id=shape1035 src="img/zrg3m-GettingStarted//image028.png"></span></i></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:20.0pt;margin-bottom:.0001pt;text-align:left;
+text-indent:10.0pt;line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><i><span lang=EN-US style='font-size:10.5pt;font-family:
+"Segoe UI",sans-serif'>&nbsp;</span></i></p>
+
+<p class=MsoNormal align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:20.0pt;margin-bottom:.0001pt;text-align:left;
+text-indent:10.0pt;line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><i><span lang=EN-US style='font-size:10.5pt;font-family:
+"Segoe UI",sans-serif;color:black'><img border=0 width=770 height=491
+src="img/zrg3m-GettingStarted//image029.png"></span></i></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><b><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><b><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Delta</span></b></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Delta in shadows are useful indicator which contains difference
+between the desired and reported states. This will not show on shadow if
+desired and reported states are the same or there is no desired part in Thing
+shadow. Running zrg3m-delta.py script will report delta states of the item when
+it triggers with delta.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>For more information about delta, refer to: </span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif;color:black'><a
+href="https://docs.aws.amazon.com/iot/latest/developerguide/device-shadow-document.html#delta-state"><span
+style='font-size:12.0pt'>https://docs.aws.amazon.com/iot/latest/developerguide/device-shadow-document.html#delta-state</span></a></span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=EN-US style='font-size:12.0pt;font-family:
+"Segoe UI",sans-serif;color:#1E1E3C;letter-spacing:1.2pt'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Below is the example of running the delta function in python.
+Please modify 'update.json' file with your key and type before running delta
+function. </span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Run zrg3m-delta.py. It will return item with desired states.</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><i><span lang=EN-US style='font-size:10.5pt;font-family:
+"Segoe UI",sans-serif;color:black'><img border=0 width=797 height=491 id="그림 10"
+src="img/zrg3m-GettingStarted//image030.png"></span></i></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><i><span lang=EN-US style='font-size:10.5pt;font-family:
+"Segoe UI",sans-serif'>&nbsp;</span></i></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><i><span lang=EN-US style='font-size:10.5pt;font-family:
+"Segoe UI",sans-serif;color:black'><img border=0 width=544 height=359 id="그림 5"
+src="img/zrg3m-GettingStarted//image031.jpg"></span></i></p>
+
+<div style='border:none;border-bottom:solid #EAECEF 1.0pt;padding:0cm 0cm 4.0pt 0cm;
+background:white'>
+
+<p class=MsoNormal align=left style='margin-top:18.0pt;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:0cm;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all;border:none;padding:0cm'><b><span lang=EN-US style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#24292E'>Troubleshooting </span></b></p>
+
+</div>
+
+<p class=MsoNormal align=left style='margin-top:18.0pt;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:0cm;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><b><span lang=EN-US style='font-size:15.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Download fail</span></b></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>If you encounter errors while downloading firmware, check the
+comport number and path in Flash.bat. Please make sure the board is at download
+mode with step below. </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Press and hold the DL and RST button together </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Release the RST button while holding DL button. </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:36.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Release the DL button </span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif;
+color:black'><img border=0 width=398 height=312 id="그림 8"
+src="img/zrg3m-GettingStarted//image032.png"></span></p>
+
+<p class=MsoNormal align=left style='margin-top:18.0pt;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:0cm;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><b><span lang=EN-US style='font-size:15.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Connection fail</span></b></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Be sure to configure AWS IoT to connect your device to the AWS
+Cloud. You can use below steps to check the device settings. </span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:72.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Connect the device with host computer</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:72.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Open terminal program (ex. hterm) </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:72.0pt;text-align:left;text-indent:-18.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>Check settings using </span><span lang=EN-US style='font-family:
+"Segoe UI",sans-serif;color:black'><a
+href="https://ictk-solution-dev.github.io/zrg3m/files/ZRG3M-ATcommand-v1.0.pdf"><span
+style='font-size:12.0pt'>AT command set</span></a></span><span lang=EN-US
+style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;color:#24292E'> .
+Make sure all the configurations are set correctly. </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:108.0pt;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif;color:#24292E'>ex)
+AT+AWS_EP ?&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +AWS_EP:
+your_host_url&nbsp; </span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:108.0pt;text-align:left;text-indent:15.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif;
+color:#24292E'>AT+AWS_TN?&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +AWS_TN
+: your thing name</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:108.0pt;text-align:left;text-indent:15.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif;
+color:#24292E'>AT+WIFI_SSID_STA?&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; +WIFI_SSID_STA
+: your Wi-Fi ID</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:108.0pt;text-align:left;text-indent:15.0pt;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif;
+color:#24292E'>AT+WIFI_PW_STA?&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +WIFI_PW_STA
+: your Wi-Fi password</span></p>
+
+<p class=MsoNormal align=center style='margin-bottom:12.0pt;text-align:center;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>If these steps don&apos;t work, please contact </span><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:black'><a
+href="mailto:zn@ictk.com"><span style='font-size:12.0pt'>zn@ictk.com</span></a></span><span
+lang=EN-US style='font-size:12.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>.</span></p>
+
+<p class=MsoNormal style='text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:15.5pt;line-height:107%;
+font-family:"Segoe UI",sans-serif;color:#212529'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><i><span lang=EN-US style='font-size:12.0pt;font-family:
+"Segoe UI",sans-serif'>&nbsp;</span></i></p>
+
+</div>
+
+</body>
+
+</html>

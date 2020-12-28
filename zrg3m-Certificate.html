@@ -1,0 +1,272 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=ks_c_5601-1987">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:굴림;
+	panose-1:2 11 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:"맑은 고딕";
+	panose-1:2 11 5 3 2 0 0 2 0 4;}
+@font-face
+	{font-family:굴림체;
+	panose-1:2 11 6 9 0 1 1 1 1 1;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:"\@굴림";
+	panose-1:2 11 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:"\@굴림체";}
+@font-face
+	{font-family:"\@맑은 고딕";}
+@font-face
+	{font-family:"\@Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:107%;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	font-family:"맑은 고딕";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:굴림;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:굴림;}
+.MsoChpDefault
+	{font-family:"맑은 고딕";}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:107%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:3.0cm 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=KO link=blue vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=left style='margin-top:18.0pt;margin-right:0cm;
+margin-bottom:9.0pt;margin-left:0cm;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><b><span lang=EN-US style='font-size:24.0pt;font-family:"Segoe UI",sans-serif;
+color:#1E1E3C;letter-spacing:1.2pt'>Getting Started with ZRG3M</span></b></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><b><span lang=EN-US style='font-size:18.0pt;font-family:
+"Segoe UI",sans-serif;color:#1E1E3C;letter-spacing:1.2pt'>Provisioning the
+certificate to G3 device</span></b></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif;
+color:black'>ZRG3M includes G3 device, an ICTK's PUF based-security chip that
+performs authentication and cryptography operations. It is suited for
+performing secure authentication, protecting firmware , preventing
+counterfeiting and storing secure data. This guide will provide writing
+certificates and keys to G3 via ZRG3M board so that the customer can write
+their personal certificate to connect AWS IoT. </span></p>
+
+<p class=MsoNormal align=left style='margin-top:18.0pt;margin-right:0cm;
+margin-bottom:9.0pt;margin-left:0cm;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><b><span lang=EN-US style='font-size:13.5pt;font-family:"Segoe UI",sans-serif;
+color:black;letter-spacing:1.2pt'>Certificate Requirements </span></b></p>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif;
+color:black'>&nbsp;Cryptographic algorithm: ECC(ECDSA and ECDH) with
+secp256r1(NIST P256)</span></p>
+
+<p class=MsoListParagraph style='margin-left:38.0pt;text-indent:-18.0pt;
+word-break:break-hangul'><span lang=EN-US style='font-family:"맑은 고딕"'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"Segoe UI",sans-serif'>ECC curve
+name : prime256v1 </span></p>
+
+<p class=MsoListParagraph style='margin-left:38.0pt;text-indent:-18.0pt;
+word-break:break-hangul'><span lang=EN-US style='font-family:"맑은 고딕"'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"Segoe UI",sans-serif'>Private
+key file extension : *.key</span></p>
+
+<p class=MsoListParagraph style='margin-left:38.0pt;text-indent:-18.0pt;
+word-break:break-hangul'><span lang=EN-US style='font-family:"맑은 고딕"'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US style='font-size:10.0pt;font-family:"Segoe UI",sans-serif'>Certificate
+file extension : *.crt</span></p>
+
+<p class=MsoNormal align=left style='margin-top:18.0pt;margin-right:0cm;
+margin-bottom:9.0pt;margin-left:0cm;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><span lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif;
+color:black'>Please have the ECC certificates ready for provisioning. Use this
+link(</span><u><span lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif;
+color:#4472C4'><a href="openssl_guide.html">openssl guide</span></u></a><span lang=EN-US style='font-size:10.5pt;
+font-family:"Segoe UI",sans-serif;color:black'>) to create one if needed. </span></p>
+
+<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-size:10.5pt;font-family:"Segoe UI",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal align=left style='margin-top:18.0pt;margin-right:0cm;
+margin-bottom:9.0pt;margin-left:0cm;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all'><b><span lang=EN-US style='font-size:13.5pt;font-family:"Segoe UI",sans-serif;
+color:#1E1E3C;letter-spacing:1.2pt'>Write your certificate to ZRG3M:</span></b></p>
+
+<p class=MsoNormal style='text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='line-height:107%;font-family:"Segoe UI",sans-serif;
+color:#212529;background:white'>G3 password will be set differently with
+client's request. Unless defined, it is set to default value : 11223344 .
+Please contact puf@ictk.com for detail information.</span></p>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='color:#212529;text-align:left;line-height:normal;
+     background:white;text-autospace:ideograph-numeric ideograph-other;
+     word-break:keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>Please
+     locate your certification files in </span><span lang=EN-US
+     style='color:black'><a href="https://github.com/ictk-solution-dev/zrg3m-py"><span
+     style='font-family:"Segoe UI",sans-serif'>zrg3m-py folder</span></a></span><span
+     lang=EN-US style='font-family:"Segoe UI",sans-serif'>. </span></li>
+</ol>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:58.0pt;line-height:12.0pt;background:white'><span lang=EN-US
+style='font-family:"Segoe UI",sans-serif;color:#24292E'>&#8226;&nbsp; A client
+certificate (*.crt) </span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:58.0pt;line-height:12.0pt;background:white'><span lang=EN-US
+style='font-family:"Segoe UI",sans-serif;color:#24292E'>&#8226;&nbsp; A client
+private key ( *.key) </span></p>
+
+<ol start=2 type=1>
+ <li class=MsoNormal style='color:#212529;text-align:left;line-height:normal;
+     background:white;text-autospace:ideograph-numeric ideograph-other;
+     word-break:keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>G3
+     supports ECC but not RSA . please use ECC 256 bit key for Amazon Trust
+     Services Endpoints. </span></li>
+</ol>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:58.0pt;line-height:12.0pt;background:white'><span lang=EN-US
+style='font-family:"Segoe UI",sans-serif;color:#24292E'>&#8226;&nbsp; </span><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:#212529'>RootCA
+:&nbsp;</span><span lang=EN-US style='color:black'><a
+href="https://www.amazontrust.com/repository/AmazonRootCA3.pem"><span
+style='font-family:"Segoe UI",sans-serif;color:#007BFF;text-decoration:none'>AmazonRootCA
+certificate</span></a></span></p>
+
+<ol start=3 type=1>
+ <li class=MsoNormal style='color:#212529;margin-bottom:12.0pt;text-align:left;
+     line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+     word-break:keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>Please
+     modify the certi.json file accordingly.<br>
+     <br>
+     AWS ROOT CA : amazon root certificate<br>
+     USER KEY : your own private key<br>
+     USER CERT : your certificate<br>
+     G3 PASSWORD : password provided from vendor</span></li>
+</ol>
+
+<p class=MsoNormal align=left style='margin-bottom:12.0pt;margin-left:36.0pt;
+text-align:left;line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif;
+color:#212529'><br>
+certi.json<br>
+<img border=0 width=385 height=120 id="그림 5"
+src="img/zrg3m-Certificate/image001.png"></span></p>
+
+<ol start=4 type=1>
+ <li class=MsoNormal style='color:#212529;margin-bottom:12.0pt;text-align:left;
+     line-height:normal;background:white;text-autospace:ideograph-numeric ideograph-other;
+     word-break:keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>Run
+     script : zrg3m_certi.py</span></li>
+</ol>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;margin-left:36.0pt;background:
+white'><span lang=EN-US style='line-height:107%;font-family:"Segoe UI",sans-serif;
+color:#212529'>Available port will be shown in windows. Once user selects the
+port for the ZRG3M, it will be stored in json file name 'zrg3m.json'</span></p>
+
+<ol start=5 type=1>
+ <li class=MsoNormal style='color:#212529;text-align:left;line-height:normal;
+     background:white;text-autospace:ideograph-numeric ideograph-other;
+     word-break:keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>Writing
+     process<br>
+     <br>
+     <br>
+     </span></li>
+</ol>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:5.0pt;margin-left:36.0pt;
+background:white'><span lang=EN-US style='font-size:10.0pt;font-family:"Segoe UI",sans-serif;
+color:red'>*please disable Wi-Fi connection prior to below process. Any
+interruption may cause false input to G3 device.</span></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;margin-left:36.0pt;background:
+white'><span lang=EN-US style='line-height:107%;font-family:"Segoe UI",sans-serif;
+color:#212529'><img border=0 width=602 height=643 id="그림 1"
+src="img/zrg3m-Certificate/image002.png"></span></p>
+
+<p class=MsoNormal style='margin-left:6.0pt;background:white'><span lang=EN-US
+style='line-height:107%;font-family:"Segoe UI",sans-serif;color:#212529'>Writing
+process may take up to minutes and will be shown as above. Please reset the ZRG3M
+board after the process.</span></p>
+
+</div>
+
+</body>
+
+</html>

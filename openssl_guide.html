@@ -1,0 +1,255 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=ks_c_5601-1987">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:굴림;
+	panose-1:2 11 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"맑은 고딕";
+	panose-1:2 11 5 3 2 0 0 2 0 4;}
+@font-face
+	{font-family:굴림체;
+	panose-1:2 11 6 9 0 1 1 1 1 1;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:"\@굴림";
+	panose-1:2 11 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:"\@굴림체";}
+@font-face
+	{font-family:"\@맑은 고딕";}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:107%;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	font-family:"맑은 고딕";}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+code
+	{font-family:굴림체;}
+pre
+	{mso-style-link:"미리 서식이 지정된 HTML Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:굴림체;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:40.0pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:107%;
+	text-autospace:none;
+	word-break:break-hangul;
+	font-size:10.0pt;
+	font-family:"맑은 고딕";}
+span.HTMLChar
+	{mso-style-name:"미리 서식이 지정된 HTML Char";
+	mso-style-link:"미리 서식이 지정된 HTML";
+	font-family:굴림체;}
+.MsoChpDefault
+	{font-family:"맑은 고딕";}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:107%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:3.0cm 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=KO link="#0563C1" vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-size:22.0pt;line-height:
+107%;font-family:"Segoe UI",sans-serif'>Certificate Creation Guide</span></b></p>
+
+<div style='border:none;border-bottom:solid #EAECEF 1.0pt;padding:0cm 0cm 4.0pt 0cm;
+background:white'>
+
+<p class=MsoNormal align=left style='margin-top:18.0pt;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:0cm;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all;border:none;padding:0cm'><b><span lang=EN-US style='font-size:14.0pt;
+font-family:"Segoe UI",sans-serif;color:#24292E'>Download openssl to your PC :</span></b><span
+lang=EN-US style='font-size:8.0pt;color:black'> &nbsp;</span><span lang=EN-US
+style='color:black'><a href="https://www.openssl.org"><b><span
+style='font-size:14.0pt;font-family:"Segoe UI",sans-serif'>https://www.openssl.org</span></b></a></span></p>
+
+<p class=MsoNormal align=left style='margin-top:18.0pt;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:0cm;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all;border:none;padding:0cm'><b><span lang=EN-US style='font-size:14.0pt;
+font-family:"Segoe UI",sans-serif;color:#24292E'>Create CA certificate </span></b></p>
+
+</div>
+
+<p class=MsoListParagraph style='margin-left:38.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>CA
+Certificate key Generation</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:38.0pt;margin-bottom:.0001pt;text-align:left;
+line-height:normal;background:#F6F8FA;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif;
+color:#24292E'>openssl ecparam -genkey -name prime256v1 -out </span><i><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:red'>ca_key_filename.key</span></i></p>
+
+<p class=MsoNormal><i><span lang=EN-US style='font-size:11.0pt;line-height:
+107%;font-family:Consolas;color:#F5001D;background:#F9F9F9'>&nbsp;</span></i></p>
+
+<p class=MsoListParagraph style='margin-left:38.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>CA
+Certificate csr Generation</span></p>
+
+<p class=MsoListParagraph align=left style='margin-top:0cm;margin-right:0cm;
+margin-bottom:0cm;margin-left:38.0pt;margin-bottom:.0001pt;text-align:left;
+line-height:normal;background:#F6F8FA;text-autospace:ideograph-numeric ideograph-other;
+word-break:keep-all'><span lang=EN-US style='font-family:"Segoe UI",sans-serif;
+color:#24292E'>openssl req -new -key </span><i><span lang=EN-US
+style='font-family:"Segoe UI",sans-serif;color:red'>ca_key_filename.key</span></i><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:#24292E'> -out </span><i><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif;color:red'>cacert_csr_filename.csr</span></i></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph style='margin-left:38.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>CA
+Certificate crt Generation</span></p>
+
+<pre style='margin-left:38.0pt;background:#F6F8FA'><code><span lang=EN-US
+style='font-size:10.0pt;font-family:"Segoe UI",sans-serif;color:#24292E'>openssl x509 -req -extensions v3_ca -set_serial 1 -in </span></code><i><span
+lang=EN-US style='font-size:10.0pt;font-family:"Segoe UI",sans-serif;
+color:red'>cacert_csr_filename.csr</span></i><span lang=EN-US style='font-family:
+"Segoe UI",sans-serif;color:#24292E'> </span><code><span lang=EN-US
+style='font-size:10.0pt;font-family:"Segoe UI",sans-serif;color:#24292E'>-signkey </span></code><i><span
+lang=EN-US style='font-size:10.0pt;font-family:"Segoe UI",sans-serif;
+color:red'>ca_key_filename.key</span></i><code><span lang=EN-US
+style='font-size:10.0pt;font-family:"Segoe UI",sans-serif;color:#24292E'>&nbsp; -out </span></code><i><span
+lang=EN-US style='font-size:10.0pt;font-family:"Segoe UI",sans-serif;
+color:red'>ca_certificate_filename.crt </span></i><code><span lang=EN-US
+style='font-size:10.0pt;font-family:"Segoe UI",sans-serif;color:#24292E'>-extfile </span></code><span
+lang=EN-US style='color:black'><a
+href="files/CA_openssl.conf"><span
+style='font-size:10.0pt;font-family:"Segoe UI",sans-serif'>CA_openssl.conf</span></a></span></pre>
+
+<p class=MsoNormal><code><span lang=EN-US style='line-height:107%;font-family:
+"Segoe UI",sans-serif;color:#24292E'>&nbsp;</span></code></p>
+
+<div style='border:none;border-bottom:solid #EAECEF 1.0pt;padding:0cm 0cm 4.0pt 0cm;
+background:white'>
+
+<p class=MsoNormal align=left style='margin-top:18.0pt;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:0cm;text-align:left;line-height:normal;
+background:white;text-autospace:ideograph-numeric ideograph-other;word-break:
+keep-all;border:none;padding:0cm'><b><span lang=EN-US style='font-size:14.0pt;
+font-family:"Segoe UI",sans-serif;color:#24292E'>Create Client Certificate </span></b></p>
+
+</div>
+
+<p class=MsoListParagraph style='margin-left:38.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>Client
+Certificate Key Generation</span></p>
+
+<pre style='margin-left:38.0pt;background:#F6F8FA'><code><span lang=EN-US
+style='font-size:10.0pt;font-family:"Segoe UI",sans-serif;color:#24292E'>openssl ecparam -genkey -name prime256v1 -out </span></code><i><span
+lang=EN-US style='font-size:10.0pt;font-family:"Segoe UI",sans-serif;
+color:red'>client_key_filename.key</span></i></pre>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph style='margin-left:38.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>Client
+Certificate csr Generation</span></p>
+
+<pre style='margin-left:38.0pt;background:#F6F8FA'><code><span lang=EN-US
+style='font-size:10.0pt;font-family:"Segoe UI",sans-serif;color:#24292E'>openssl req -new -key </span></code><i><span
+lang=EN-US style='font-size:10.0pt;font-family:"Segoe UI",sans-serif;
+color:red'>client_key_filename.key</span></i><code><span lang=EN-US
+style='font-size:10.0pt;font-family:"Segoe UI",sans-serif;color:#24292E'> -out </span></code><i><span
+lang=EN-US style='font-size:10.0pt;font-family:"Segoe UI",sans-serif;
+color:red'>clientcert_csr_filename.csr</span></i></pre>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoListParagraph style='margin-left:38.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"Segoe UI",sans-serif'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>Client
+Certificate crt Generation</span></p>
+
+<pre style='margin-left:38.0pt;background:#F6F8FA'><code><span lang=EN-US
+style='font-size:10.0pt;font-family:"Segoe UI",sans-serif;color:#24292E'>openssl x509 -req -extensions v3_user -in </span></code><i><span
+lang=EN-US style='font-size:10.0pt;font-family:"Segoe UI",sans-serif;
+color:red'>clientcert_csr_filename.csr</span></i><span lang=EN-US
+style='font-family:"Segoe UI",sans-serif;color:#24292E'> </span><code><span
+lang=EN-US style='font-size:10.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'>-CA </span></code><i><span lang=EN-US style='font-size:10.0pt;
+font-family:"Segoe UI",sans-serif;color:red'>ca_certificate_filename.crt</span></i><code><span
+lang=EN-US style='font-size:10.0pt;font-family:"Segoe UI",sans-serif;
+color:#24292E'> -CAcreateserial&nbsp; -CAkey&nbsp; </span></code><i><span
+lang=EN-US style='font-size:10.0pt;font-family:"Segoe UI",sans-serif;
+color:red'>ca_key_filename.key</span></i><code><span lang=EN-US
+style='font-size:10.0pt;font-family:"Segoe UI",sans-serif;color:#24292E'>&nbsp; -out </span></code><i><span
+lang=EN-US style='font-size:10.0pt;font-family:"Segoe UI",sans-serif;
+color:red'>client_certificate_filename.crt</span></i></pre>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>*please refer the below link to use other
+options.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>openssl commands : <a
+href="https://www.openssl.org/docs/man1.1.1/man1/">https://www.openssl.org/docs/man1.1.1/man1/</a></span></p>
+
+</div>
+
+</body>
+
+</html>
